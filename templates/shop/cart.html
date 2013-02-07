@@ -53,8 +53,9 @@
 </table>
 <div class="form-actions clearfix">
     <div class="form-actions-wrap">
-    <a href="{% url "shop_checkout" %}" class="btn btn-primary btn-large">{% trans "Go to Checkout" %}</a>
-    <input type="submit" name="update_cart" class="btn btn-large" value="{% trans "Update Cart" %}">
+    <p><a href="{% url "shop_checkout" %}" class="btn btn-primary btn-large">{% trans "Go to Checkout" %}</a></p>
+    <p><input type="submit" name="update_cart" class="btn btn-large" value="{% trans "Update Cart" %}"></p>
+    <p><a class="btn btn-large" href="{% url "page" "store" %}">{% trans "Continue Shopping" %}</a></p>
     </div>
 </div>
 </form>

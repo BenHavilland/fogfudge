@@ -1,7 +1,6 @@
-
 from django.conf.urls.defaults import patterns, include, url
 from django.contrib import admin
-
+from django.conf import settings
 from mezzanine.core.views import direct_to_template
 
 
@@ -12,6 +11,10 @@ admin.autodiscover()
 # to the project's homepage.
 
 urlpatterns = patterns("",
+
+    (r'^static/(?P<path>.*)$',
+     'django.views.static.serve',
+     {'document_root': settings.STATIC_ROOT}),
 
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
@@ -97,3 +100,15 @@ urlpatterns = patterns("",
 # pages can use JS, CSS and images.
 handler404 = "mezzanine.core.views.page_not_found"
 handler500 = "mezzanine.core.views.server_error"
+
+if settings.DEBUG:
+    urlpatterns += patterns('',
+        url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+        }),
+   )
+
+if not settings.DEBUG:
+   urlpatterns += patterns('',
+       (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
+   )

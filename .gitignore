@@ -3,4 +3,5 @@
 *.pyc
 local_settings.py
 settings_mail.py
+settings_secret_key.py
 venv

@@ -190,9 +190,6 @@ SITE_ID = 1
 # to load the internationalization machinery.
 USE_I18N = False
 
-# Make this unique, and don't share it with anybody.
-SECRET_KEY = "c5b097b6-0059-4a93-b172-5ef6645c5e9eb48b75a4-317e-4a65-ba6d-57e8beed2bcbabf25165-ce83-401b-9ab0-87b33c383d9a"
-
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
 #   * Receive x-headers
@@ -385,6 +382,14 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 #######################
 try:
     from settings_mail import *
+except ImportError:
+    pass
+
+#############################
+# BEN'S SECRET_KEY SETTINGS #
+#############################
+try:
+    from settings_secret_key import *
 except ImportError:
     pass
 

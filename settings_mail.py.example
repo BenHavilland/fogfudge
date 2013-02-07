@@ -1,0 +1,6 @@
+# Easy setup with sendgrid.com or similar service
+EMAIL_HOST_USER = ""
+EMAIL_HOST= ""
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_PASSWORD = ""

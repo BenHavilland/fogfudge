@@ -12,6 +12,10 @@ admin.autodiscover()
 
 urlpatterns = patterns("",
 
+    (r'^static/(?P<path>.*)$',
+     'django.views.static.serve',
+     {'document_root': settings.STATIC_ROOT}),)
+
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
     ("^admin/", include(admin.site.urls)),

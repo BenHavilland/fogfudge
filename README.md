@@ -9,7 +9,7 @@ fogfudge
 *  Follow the commits to see my modifications one at a time.
 *  I did one commit at first that held several changes (my bad).
 
-INSTALLING
+Installing
 ==========
 
 * `git clone git@github.com:clickyspinny/fogfudge.git`

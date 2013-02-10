@@ -13,7 +13,7 @@ Installing
 ==========
 
 * `git clone git@github.com:clickyspinny/fogfudge.git`
-* `cd fogfudge.com`
+* `cd fogfudge`
 * `virtualenv venv --distribute`
 * `pip install -r requirements.txt`
 * `deactivate` turn off venv (optional)

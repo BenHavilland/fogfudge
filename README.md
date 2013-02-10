@@ -1,5 +1,4 @@
-fogfudge
-============
+# fogfudge
 
 *  This a the production site for fogfudge.com and also a fully portable example of Mezzanine with Cartridge shopping cart plugin.
 *  Uses venv for application distribution.
@@ -8,9 +7,7 @@ fogfudge
 *  Follow the commits to see my modifications one at a time.
 *  I did one commit at first that held several changes (my bad).
 
-Installing
-==========
-
+## Installing
 * `git clone git@github.com:clickyspinny/fogfudge.git`
 * `cd fogfudge`
 * `virtualenv venv --distribute`
@@ -18,8 +15,7 @@ Installing
 * `pip install -r requirements.txt`
 * `deactivate` turn off venv (optional)
 
-Running
-=======
+## Running
 * go to fogfudge dir `cd MYPATH/fogfudge`
 * `. venv/bin/activate`
 * ./manage.py runserver

@@ -32,6 +32,11 @@
 * or http://127.0.0.1:8000/admin login: admin/admin
 
 ## Heroku
+### Deployment
+*  Create new app on heroku `heroku create`
+*  Rename it `heroku apps:rename newname`
+*  deploy `git push heroku master`
+### Files that have been modified to use with heroku
 * configured for the heroku (postgres) database via https://github.com/clickyspinny/fogfudge/blob/master/settings.py#L219
 * configured for heroku served static files
     * urls.py - https://github.com/clickyspinny/fogfudge/blob/master/urls.py#L15

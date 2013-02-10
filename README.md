@@ -37,3 +37,4 @@
     * urls.py - https://github.com/clickyspinny/fogfudge/blob/master/urls.py#L15
     * Procfile -  https://github.com/clickyspinny/fogfudge/blob/master/Procfile#L1
     * settings.py - https://github.com/clickyspinny/fogfudge/blob/master/settings.py#L317
+* ref: https://gist.github.com/joshfinnie/4046138

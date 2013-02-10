@@ -10,11 +10,13 @@
 ## Installing
 * `git clone git@github.com:clickyspinny/fogfudge.git`
 * `cd fogfudge`
-* `cp local_settings.py.example local_settings.py`
-* key Setup
+* demo database setup
+    * `cp local_settings.py.example local_settings.py`
+    * production database (set in settings.py) is configured for use with heroku
+* key setup
     * change the SECRET_KEY value in settings_secret_key.py.example to something totally different
     * `cp settings_secret_key.py.example settings_secret_key.py`
-* optional Setup
+* optional setup
     * change values in settings_mail.py.example then 
     * `cp settings_mail.py.example settings_mail.py`
 * `virtualenv venv --distribute`

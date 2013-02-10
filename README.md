@@ -39,7 +39,7 @@
 *  deploy `git push heroku master`
 *  ref: https://devcenter.heroku.com/articles/django
 
-### Files that have been modified for heroku, fyi
+### Files that have been modified for heroku
 * configured for the heroku (postgres) database via https://github.com/clickyspinny/fogfudge/blob/master/settings.py#L219
 * configured for heroku served static files
     * urls.py - https://github.com/clickyspinny/fogfudge/blob/master/urls.py#L15

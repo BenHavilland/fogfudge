@@ -1,4 +1,4 @@
-# fogfudge
+# fogfudge.com
 
 *  This a the production site for fogfudge.com and also a fully portable example of Mezzanine with Cartridge shopping cart plugin.
 *  Uses venv for application distribution.

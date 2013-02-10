@@ -28,4 +28,5 @@
 * go to fogfudge dir `cd MYPATH/fogfudge`
 * `. venv/bin/activate`
 * ./manage.py runserver
-* Open up web browser to local site: http://127.0.0.1:8000
+* open up web browser to local site: http://127.0.0.1:8000
+* or http://127.0.0.1:8000/admin login: admin/admin

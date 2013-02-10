@@ -10,6 +10,7 @@
 ## Installing
 * `git clone git@github.com:clickyspinny/fogfudge.git`
 * `cd fogfudge`
+* `cp local_settings.py.example local_settings.py`
 * `virtualenv venv --distribute`
 * `. venv/bin/activate`
 * `pip install -r requirements.txt`

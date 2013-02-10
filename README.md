@@ -24,9 +24,15 @@
 * `pip install -r requirements.txt`
 * `deactivate` turn off venv (optional)
 
-## Running
+## Running Locally
 * go to fogfudge dir `cd MYPATH/fogfudge`
 * `. venv/bin/activate`
 * ./manage.py runserver
 * open up web browser to local site: http://127.0.0.1:8000
 * or http://127.0.0.1:8000/admin login: admin/admin
+
+## Heroku
+* configured for the heroku (postgres) database via https://github.com/clickyspinny/fogfudge/blob/master/settings.py#L219
+* configured for heroku served static files
+    * urls.py - https://github.com/clickyspinny/fogfudge/blob/master/urls.py#L15
+    * Procfile -  https://github.com/clickyspinny/fogfudge/blob/master/Procfile#L1

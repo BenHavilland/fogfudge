@@ -1,9 +1,8 @@
 fogfudge
 ============
 
-*  This a the production site for fogfudge.com
-*  Setup using mezzanine and the cartridge shopping cart plugin.
-*  Uses virtual environment - venv.
+*  This a the production site for fogfudge.com and also a fully portable example of Mezzanine with Cartridge shopping cart plugin.
+*  Uses venv for application distribution.
 *  Tested deployable to heroku.
 *  Includes some sample data.
 *  Follow the commits to see my modifications one at a time.

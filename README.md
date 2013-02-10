@@ -15,5 +15,6 @@ Installing
 * `git clone git@github.com:clickyspinny/fogfudge.git`
 * `cd fogfudge`
 * `virtualenv venv --distribute`
+* `. venv/bin/activate`
 * `pip install -r requirements.txt`
 * `deactivate` turn off venv (optional)

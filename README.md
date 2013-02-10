@@ -18,3 +18,9 @@ Installing
 * `. venv/bin/activate`
 * `pip install -r requirements.txt`
 * `deactivate` turn off venv (optional)
+
+Running
+=======
+* go to fogfudge dir `cd MYPATH/fogfudge`
+* `. venv/bin/activate`
+* ./manage.py runserver

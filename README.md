@@ -34,8 +34,7 @@
 ## Heroku
 
 ### Deployment
-*  Create new app on heroku `heroku create`
-*  Rename it `heroku apps:rename newname`
+*  Create new app on heroku `heroku create newappname`
 *  deploy `git push heroku master`
 *  ref: https://devcenter.heroku.com/articles/django
 

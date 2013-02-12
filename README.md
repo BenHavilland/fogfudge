@@ -1,4 +1,4 @@
-# fogfudge
+# fogfudge.com
 
 *  This a the production site for fogfudge.com and also a fully portable example of Mezzanine with Cartridge shopping cart plugin.
 *  Uses venv for application distribution.
@@ -24,9 +24,24 @@
 * `pip install -r requirements.txt`
 * `deactivate` turn off venv (optional)
 
-## Running
+## Running Locally
 * go to fogfudge dir `cd MYPATH/fogfudge`
 * `. venv/bin/activate`
 * ./manage.py runserver
 * open up web browser to local site: http://127.0.0.1:8000
 * or http://127.0.0.1:8000/admin login: admin/admin
+
+## Heroku
+
+### Deployment
+*  Create new app on heroku `heroku create newappname`
+*  deploy `git push heroku master`
+*  ref: https://devcenter.heroku.com/articles/django
+
+### Files that have been modified for heroku
+* configured for the heroku (postgres) database via https://github.com/clickyspinny/fogfudge/blob/master/settings.py#L219
+* configured for heroku served static files
+    * urls.py - https://github.com/clickyspinny/fogfudge/blob/master/urls.py#L15
+    * Procfile -  https://github.com/clickyspinny/fogfudge/blob/master/Procfile#L1
+    * settings.py - https://github.com/clickyspinny/fogfudge/blob/master/settings.py#L317
+* ref: https://gist.github.com/joshfinnie/4046138

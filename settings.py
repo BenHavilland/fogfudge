@@ -393,6 +393,14 @@ try:
 except ImportError:
     pass
 
+##########################
+# BEN'S PAYMENT SETTINGS #
+##########################
+try:
+    from settings_payment_processors import *
+except ImportError:
+    pass
+
 ##################
 # LOCAL SETTINGS #
 ##################

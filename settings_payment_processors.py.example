@@ -1,0 +1,5 @@
+# This is the setup for paypal signature based API access
+SHOP_HANDLER_PAYMENT = "cartridge.shop.payment.paypal.process"
+PAYPAL_USER = ""
+PAYPAL_PASSWORD = ""
+PAYPAL_SIGNATURE = ""

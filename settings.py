@@ -35,6 +35,8 @@
 # function ``cartridge.shop.utils.set_shipping``.
 # SHOP_HANDLER_BILLING_SHIPPING = \
 #                           "cartridge.shop.checkout.default_billship_handler"
+SHOP_HANDLER_BILLING_SHIPPING = "mods.shipping_mod.fudge_shipping_handler"
+FREE_SHIP_VALUE = 50
 
 # Dotted package path and class name of the function that
 # is called once an order is successful and all of the order

@@ -352,7 +352,7 @@ MIDDLEWARE_CLASSES = (
     "mezzanine.core.middleware.AdminLoginInterfaceSelectorMiddleware",
     "mezzanine.core.middleware.SitePermissionMiddleware",
     # Uncomment the following if using any of the SSL settings:
-    # "mezzanine.core.middleware.SSLRedirectMiddleware",
+    "mezzanine.core.middleware.SSLRedirectMiddleware",
     "mezzanine.pages.middleware.PageMiddleware",
     "mezzanine.core.middleware.FetchFromCacheMiddleware",
 )
@@ -415,6 +415,11 @@ try:
 except ImportError:
     pass
 
+######################
+# BEN'S SSL SETTINGS #
+######################
+SSL_FORCED_PREFIXES_ONLY = False
+SSL_FORCE_URL_PREFIXES = ("/admin","/shop","/store")
 
 ####################
 # DYNAMIC SETTINGS #

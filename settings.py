@@ -418,7 +418,6 @@ except ImportError:
 ######################
 # BEN'S SSL SETTINGS #
 ######################
-SSL_FORCED_PREFIXES_ONLY = False
 SSL_FORCE_URL_PREFIXES = ("/admin","/shop","/store")
 
 ####################

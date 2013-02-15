@@ -5,6 +5,7 @@ Pillow==1.7.8
 bleach==1.2
 distribute==0.6.27
 dj-database-url==0.2.1
+django-sslify==0.2
 filebrowser-safe==0.2.14
 grappelli-safe==0.2.11
 gunicorn==0.17.2

@@ -13,4 +13,5 @@ html5lib==0.95
 pisa==3.0.33
 psycopg2==2.4.6
 pytz==2012j
+reportlab==2.6
 wsgiref==0.1.2

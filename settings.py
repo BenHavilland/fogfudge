@@ -404,6 +404,15 @@ try:
 except ImportError:
     pass
 
+###################################
+# BEN'S S3 LOCAL STORAGE SETTINGS #
+###################################
+
+try:
+    from settings_s3 import *
+except ImportError:
+    pass
+
 ##################
 # LOCAL SETTINGS #
 ##################

@@ -1,0 +1,12 @@
+AWS_ACCESS_KEY_ID = ''
+AWS_SECRET_ACCESS_KEY = ''
+AWS_STORAGE_BUCKET_NAME = 'bucketname'
+AWS_PRELOAD_METADATA = True # necessary to fix manage.py collectstatic command to only upload changed files instead of all files
+
+# Below setup will work host media files on s3.  Static remains on Heroku.
+MEDIA_URL = 'https://s3.amazonaws.com/bucketname/'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
+# Uncomment lines below for s3 static file support.
+#STATICFILES_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+#STATIC_URL = 'https://s3.amazonaws.com/bucketname/'

@@ -35,8 +35,8 @@
 
 ### Deployment
 *  Create new app on heroku `heroku create newappname`
-*  sync the db `heroku run python manage.py syncdb`
 *  deploy `git push heroku master`
+*  sync the db `heroku run python manage.py syncdb`
 *  ref: https://devcenter.heroku.com/articles/django
 
 ### Files that have been modified for heroku

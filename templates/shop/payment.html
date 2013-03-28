@@ -2,8 +2,22 @@
 {% load i18n %}
 
 {% block fields %}
-{% if request.cart.has_items %}
-{% include "shop/includes/payment_fields.html" %}
-{{ form.other_fields.as_ul }}
-{% endif %}
+
+    {% if request.cart.invalid_address %}
+
+        <h2>We're sorry but we are only able to sell within Pacifica, CA at this time.</h2>
+        <p>For more details please read about our <a href="/presale/">limited local presale</a>.</p>
+        {% load i18n mezzanine_tags %}
+        <fieldset style="display: none;">
+            {% fields_for form.card_fields %}
+        </fieldset>
+        {{ form.other_fields.as_ul }}
+
+    {% elif request.cart.has_items %}
+
+        {% include "shop/includes/payment_fields.html" %}
+        {{ form.other_fields.as_ul }}
+
+    {% endif %}
+
 {% endblock %}

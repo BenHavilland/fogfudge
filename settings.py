@@ -316,7 +316,8 @@ INSTALLED_APPS = (
     "mezzanine.accounts",
     "mezzanine.mobile",
     "gunicorn",
-    "mods"
+    "mods",
+    "storages",
 )
 
 # List of processors used by RequestContext to populate the context.

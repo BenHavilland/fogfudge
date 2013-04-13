@@ -64,7 +64,15 @@ $(function() {$('.middle :input:visible:enabled:first').focus();});
 
 	{% block fields %}{% endblock %}
 
-	{% if request.cart.has_items %}
+    {% if request.cart.invalid_address %}
+    <div class="form-actions clearfix">
+        <div class="form-actions-wrap">
+        {% if not CHECKOUT_STEP_FIRST %}
+        <input type="submit" class="btn btn-large btn-primary" name="back" value="{% trans "Back" %}">
+        {% endif %}
+        </div>
+    </div>
+	{% elif request.cart.has_items %}
     <div class="form-actions clearfix">
         <div class="form-actions-wrap">
 	    <input type="submit" class="btn btn-large btn-primary" value="{% trans "Next" %}">

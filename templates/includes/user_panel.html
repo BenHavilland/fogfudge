@@ -1,5 +1,24 @@
+<div class="panel">
+    {% spaceless %}
+    <h4>DELIVERY</h4>
+    <ul>
+        <li>
+        FREE for all orders over $50
+        </li>
+        <li>
+        $2 for all orders under $50 (Pacifica Only)
+        </li>
+    </ul>
+    <p>
+    Currently our products are only available for purchase/delivery within the city of Pacifica, CA.
+    </p>
+    <p>If you are not in our delivery area please come visit beautiful <a target='_new' href='http://www.cityofpacifica.org/about/50_great_things_in_pacifica/default.asp'>Pacifica</a>!
+    </p>
+    <p><a href='/contact'>Contact us</a> to schedule a delivery for when you visit.</p>
+    {% endspaceless %}
+</div>
+
 {% load i18n future shop_tags mezzanine_tags %}
-<!--
 <div class="panel">
     {% spaceless %}
     <a href="{% url "shop_cart" %}">
@@ -19,4 +38,3 @@
     {% endifinstalled %}
     {% endspaceless %}
 </div>
--->
